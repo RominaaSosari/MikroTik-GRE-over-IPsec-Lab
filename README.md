@@ -47,21 +47,21 @@ configure a GRE Tunnel on both MikroTic routers.
 - IPsec Secret
 
 - allow-fast-port=no
-
-  ### 2. Assign Tunnel IP Address
+- 
+### 2. Assign Tunnel IP Address
   MikroTik 1: ip address add address=10.10.10.1/30 interface=gre-to-site
 
   MikroTik2: ip address add address=10.10.10.2/30 interface=gre-to-site
 
-  ### 3.Configure Static Routes
+### 3.Configure Static Routes
   MikroTik1: ip route add dst-address=192.168.2.0/24 gateway=10.10.10.2
 
   MikroTik2: ip route add dst-address=192.168.1.0/24 gateway=10.10.10.1
+  
+## Connectivity Test
 
-  ## Connectivity Test
 
-
- ## Technologies Used
+## Technologies Used
  - MikroTik RouterOS
    
  - GRE Tunnel
