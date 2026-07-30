@@ -38,7 +38,7 @@ the GRE Tunnel provides Layer 3 connectivity between two remote LANs, to ensure 
 
 ## Configuration Steps
 ### 1. Configure GRE Tunnel
-configure a GRE Tunnel on both MikroTic routers.
+configure a GRE Tunnel on both MikroTik routers.
 
 - Local Address
 
