@@ -22,18 +22,18 @@ the GRE Tunnel provides Layer 3 connectivity between two remote LANs, to ensure 
 
 ## IP Addressing
 ### MikroTik 1
--ether1: 192.168.1.1/24 --> LAN 
+- ether1: 192.168.1.1/24 --> LAN 
 
--ether2: 172.16.1.1/16 --> WAN
+- ether2: 172.16.1.1/16 --> WAN
 
--GRE Tunnel: 10.10.10.1/30 --> Tunnel
+- GRE Tunnel: 10.10.10.1/30 --> Tunnel
 
 ### MikroTik 2
--ether1: 192.168.2.2/24 --> LAN
+- ether1: 192.168.2.2/24 --> LAN
 
--ether2: 172.16.2.2/16 --> WAN
+- ether2: 172.16.2.2/16 --> WAN
 
--GRE Tunnel: 10.10.10.2/30 --> Tunnel
+- GRE Tunnel: 10.10.10.2/30 --> Tunnel
 
 
 ## Configuration Steps
@@ -47,7 +47,7 @@ configure a GRE Tunnel on both MikroTic routers.
 - IPsec Secret
 
 - allow-fast-port=no
-- 
+  
 ### 2. Assign Tunnel IP Address
   MikroTik 1: ip address add address=10.10.10.1/30 interface=gre-to-site
 
