@@ -19,6 +19,10 @@ the GRE Tunnel provides Layer 3 connectivity between two remote LANs, to ensure 
 
 
 ## Network Topology
+![Topology](images/GRE-over-IPsec.drawio.png)
+
+
+
 
 ## IP Addressing
 ### MikroTik 1
@@ -57,8 +61,57 @@ configure a GRE Tunnel on both MikroTik routers.
   MikroTik1: ip route add dst-address=192.168.2.0/24 gateway=10.10.10.2
 
   MikroTik2: ip route add dst-address=192.168.1.0/24 gateway=10.10.10.1
+
   
 ## Connectivity Test
+ping GRE Tunnel IP (MikroTik1 --> 10.10.10.2):
+![ping-gre-tunnel-ip](images/Ping-MikroTik1-GRE-IP.png)
+
+ping GRE Tunnel IP (MikroTik2 --> 10.10.10.1):
+![ping-gre-tunnel-ip](images/Ping-MikroTik2-GRE-IP.png)
+
+ping remote Lan from MikroTik1:
+![ping-remote-lan-mikrotik1](images/Ping-MikroTik1-LAN2.png)
+
+
+ping remote Lan from MikroTik2:
+![ping-remote-lan-mikrotik2](images/Ping-MikroTik2-LAN1.png)
+
+
+
+
+## Screenshots
+
+Interface List (MikroTik1):
+![interface-list-mikrotik1](images/Interfaces-MikroTik1.png)
+
+
+Interface List (MikroTik2):
+![interface-list-mikrotik2](images/Interfaces-MikroTik2.png)
+
+
+IP Address MikroTik1:
+![ip-address-mikrotik1](images/IP-Address-MikroTik1.png)
+
+
+IP Address MikroTik2:
+![ip-address-mikrotik2](images/IP-Address-MikroTik2.png)
+
+Static Route(MikroTik1):
+![static-route-mikrotik1](images/IP-Route-MikroTik1.png)
+
+
+Static Route(MikroTik2):
+![static-route-mikrotik2](images/IP-Route-MikroTik2.png)
+
+
+Interface GRE Tunnel(MikroTik1):
+![interface-gre-mikrotik-1](images/Interface-GRE-Tunnel-MikroTik1.png)
+
+
+
+Interface GRE Tunnel(MikroTik2):
+![interface-gre-mikrotik-2](images/Interface-GRE-Tunnel-MikroTik2.png)
 
 
 ## Technologies Used
