@@ -73,12 +73,12 @@ ping GRE Tunnel IP (MikroTik2 --> 10.10.10.1):
 
 ![ping-gre-tunnel-ip](images/Ping-MikroTik2-GRE-IP.png)
 
-ping remote Lan from MikroTik1:
+ping remote lan from MikroTik1:
 
 ![ping-remote-lan-mikrotik1](images/Ping-MikroTik1-LAN2.png)
 
 
-ping remote Lan from MikroTik2:
+ping remote lan from MikroTik2:
 
 ![ping-remote-lan-mikrotik2](images/Ping-MikroTik2-LAN1.png)
 
